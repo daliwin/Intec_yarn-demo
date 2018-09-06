@@ -1,3 +1,7 @@
 crel = require('crel')
 
-document.body.appendChild(crel('h1', 'test'))
+var page = crel('div',
+			   crel('h1', 'Title'),
+			   crel('p', 'some text'))
+
+document.body.appendChild(page)
